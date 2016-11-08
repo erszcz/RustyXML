@@ -15,3 +15,13 @@ name = "xml"
 
 [features]
 bench = []
+
+[[bin]]
+doc  = false
+name = "print-parser"
+path = "src/bin/print-parser.rs"
+
+[[bin]]
+doc  = false
+name = "incremental-element-builder"
+path = "src/bin/incremental-element-builder.rs"
