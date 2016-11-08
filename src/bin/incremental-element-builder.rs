@@ -7,21 +7,21 @@ fn main() {
     p.feed_str("<a href='//example.com'/>");
     for elem in p.filter_map(|x| e.handle_event(x)) {
         match elem {
-            Ok(e) => println!("{}", e),
+            Ok(e) => println!("{:?}", e),
             Err(e) => println!("{}", e),
         }
     }
     p.feed_str("<a");
     for elem in p.filter_map(|x| e.handle_event(x)) {
         match elem {
-            Ok(e) => println!("{}", e),
+            Ok(e) => println!("{:?}", e),
             Err(e) => println!("{}", e),
         }
     }
     p.feed_str("/>");
     for elem in p.filter_map(|x| e.handle_event(x)) {
         match elem {
-            Ok(e) => println!("{}", e),
+            Ok(e) => println!("{:?}", e),
             Err(e) => println!("{}", e),
         }
     }
