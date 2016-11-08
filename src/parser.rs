@@ -58,6 +58,7 @@ impl fmt::Display for ParserError {
 }
 
 // Event based parser
+#[derive(Debug)]
 enum State {
     OutsideTag,
     TagOpened,
@@ -97,6 +98,7 @@ enum State {
 ///     }
 /// }
 /// ~~~
+#[derive(Debug)]
 pub struct Parser {
     line: u32,
     col: u32,
