@@ -144,7 +144,7 @@ impl Parser {
     }
 }
 
-impl Iterator for Parser {
+impl<'a> Iterator for &'a mut Parser {
     type Item = Result<Event, ParserError>;
 
     fn next(&mut self) -> Option<Result<Event, ParserError>> {
