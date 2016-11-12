@@ -25,3 +25,8 @@ path = "src/bin/print-parser.rs"
 doc  = false
 name = "incremental-element-builder"
 path = "src/bin/incremental-element-builder.rs"
+
+[[bin]]
+doc  = false
+name = "bosh-bug"
+path = "src/bin/bosh-bug.rs"
